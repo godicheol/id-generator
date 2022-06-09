@@ -38,14 +38,6 @@
         return str;
     }
 
-    exports.short = function() {
-        var char1 = (Math.random() * 46656) | 0;
-        var char2 = (Math.random() * 46656) | 0;
-        char1 = ("000" + char1.toString(36)).slice(-3);
-        char2 = ("000" + char2.toString(36)).slice(-3);
-        return char1 + char2;
-    }
-
     exports.uuidv4 = function() {
         return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
             var r = Math.random() * 16 | 0,
