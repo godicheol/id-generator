@@ -11,12 +11,6 @@
         "?/#+&="
     ];
 
-    /*
-        options: {
-            length: 6,
-            charset: 0,
-        }
-    */
     exports.generate = function(options) {
         var len = typeof(options.length) == "number" ? options.length : 6;
         var charset;
